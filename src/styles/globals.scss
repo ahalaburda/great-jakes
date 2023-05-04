@@ -1,0 +1,22 @@
+@import "variables";
+@import "medias";
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  color: $color-white;
+  background: $color-background;
+  margin: 0;
+  font-family: $font-family;
+}
+
+hr {
+  margin: 22px 0;
+  mix-blend-mode: normal;
+  opacity: 0.2;
+  border: 1px solid $color-white;
+}

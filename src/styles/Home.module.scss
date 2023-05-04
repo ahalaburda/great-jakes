@@ -1,0 +1,21 @@
+@import "variables";
+.container {
+  margin: 50px;
+}
+
+.closeButton {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.title {
+  width: 285px;
+  height: 66px;
+  line-height: 66px;
+  h1 {
+    font-weight: 400;
+    font-size: $font-size;
+    display: flex;
+    align-items: center;
+  }
+}

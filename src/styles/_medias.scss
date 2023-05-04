@@ -1,0 +1,31 @@
+$breakpoints-sm: 576px;
+$breakpoints-md: 768px;
+$breakpoints-lg: 992px;
+$breakpoints-xl: 1200px;
+$breakpoints-xxl: 1680px;
+
+@mixin for-phone-only {
+  @media (max-width: $breakpoints-sm) {
+    @content;
+  }
+}
+@mixin for-tablet-portrait-up {
+  @media (min-width: $breakpoints-md) {
+    @content;
+  }
+}
+@mixin for-tablet-landscape-up {
+  @media (min-width: $breakpoints-lg) {
+    @content;
+  }
+}
+@mixin for-desktop-up {
+  @media (min-width: $breakpoints-xl) {
+    @content;
+  }
+}
+@mixin for-big-desktop-up {
+  @media (min-width: $breakpoints-xxl) {
+    @content;
+  }
+}
