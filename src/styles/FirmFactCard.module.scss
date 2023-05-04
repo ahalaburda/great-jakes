@@ -1,2 +1,56 @@
 @import "variables";
-@import "medias";
+
+.contentWrapper {
+  margin: 0;
+  width: 92%;
+}
+
+.firmFactCard {
+  background: white;
+  min-height: 322px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border: 15px solid $color-white;
+  cursor: pointer;
+  &:hover {
+    background-color: $color-green;
+    -webkit-transition: background 0.5s;
+    transition: background 0.5s;
+    .contentWrapper {
+      border: 1px solid $color-white;
+      border-radius: 70px;
+      div:not([disabled]) {
+        background-color: $color-green;
+        -webkit-transition: background 0.5s;
+        transition: background 0.5s;
+      }
+    }
+  }
+}
+.firmFactCard:first-child {
+  grid-column: 1 / 1;
+  grid-row: 1 / 3;
+}
+
+.firmFactCard:nth-child(n + 5) {
+  align-items: start;
+  padding-top: 35px;
+}
+
+.default:hover {
+  border: 15px solid $color-green;
+}
+.border:hover {
+  background-color: white;
+  border: 15px solid $color-green;
+  -webkit-transition: border 0.5s;
+  transition: border 0.5s;
+}
+.disabled:hover {
+  background-color: white !important;
+  border: 15px solid $color-white;
+  cursor: not-allowed;
+}

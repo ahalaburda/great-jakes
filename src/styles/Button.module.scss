@@ -1,2 +1,24 @@
 @import "variables";
-@import "medias";
+
+.btn {
+  background: $color-blue;
+  border-radius: 70px;
+  height: 70px;
+  color: $color-white;
+  font-size: 14px;
+  padding: 10px;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.default:hover {
+  border: 15px solid $color-green;
+}
+
+.disabled {
+  background: $color-gray;
+  color: $color-white;
+  cursor: not-allowed;
+}

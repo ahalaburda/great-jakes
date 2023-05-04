@@ -2,6 +2,8 @@ import Head from "next/head";
 import { Open_Sans } from "next/font/google";
 import styles from "@/styles/Home.module.scss";
 import CloseIcon from "@/images/CloseIcon";
+import FirmFacts from "@/ components/FirmFacts";
+import { DATA } from "@/data";
 
 const openSans = Open_Sans({
   weights: [400, 600],
@@ -29,6 +31,9 @@ export default function Home() {
             <h1>Firm Facts</h1>
           </div>
           <hr />
+          <div>
+            <FirmFacts data={DATA} />
+          </div>
         </div>
       </main>
     </>

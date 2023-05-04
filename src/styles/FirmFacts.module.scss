@@ -1,0 +1,24 @@
+@import "medias";
+
+.firmFactGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: 18px;
+  justify-content: space-between;
+  margin: 1rem;
+  padding: 0;
+
+  @include for-tablet-portrait-up() {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  @include for-tablet-landscape-up() {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  @include for-desktop-up() {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
